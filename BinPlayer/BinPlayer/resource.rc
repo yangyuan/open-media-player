@@ -1,0 +1,452 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_MAIN           ICON                    "resource\\main.ico"
+IDI_ICON_TRAY           ICON                    "resource\\tray.ico"
+IDI_ICON_TRAY_V         ICON                    "resource\\tray_v.ico"
+IDI_ICON_CFG_GENERAL    ICON                    "resource\\config_icon\\general.ico"
+IDI_ICON_CFG_THEME      ICON                    "resource\\config_icon\\ui.ico"
+IDI_ICON_CFG_PLAYLIST   ICON                    "resource\\config_icon\\playlist.ico"
+IDI_ICON_CFG_KEY        ICON                    "resource\\config_icon\\key.ico"
+IDI_ICON_CFG_DEBUG      ICON                    "resource\\config_icon\\debug.ico"
+IDI_ICON_COMM_FALSE     ICON                    "resource\\common_icon\\false.ico"
+IDI_ICON_COMM_TRUE      ICON                    "resource\\common_icon\\true.ico"
+IDI_ICON_CFG_DECODE     ICON                    "resource\\config_icon\\decode.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open File",                  ID_FILE_OPENFILE
+        MENUITEM "Open &URL",                   ID_FILE_OPENURL
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       ID_FILE_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Play&List",                   ID_VIEW_PLAYLIST
+        MENUITEM SEPARATOR
+        MENUITEM "Keep on &Top",                ID_VIEW_ONTOP
+    END
+    POPUP "&Play"
+    BEGIN
+        MENUITEM "&Repeat",                     ID_PLAY_REPEAT
+        MENUITEM "&Shuffle",                    ID_PLAY_SHUFFLE
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Options",                    ID_TOOLS_OPTIONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      ID_HELP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Chec&k for Updates",          ID_HELP_CHECKFORUPDATES
+    END
+END
+
+IDR_MENU_PLAYLIST MENU 
+BEGIN
+    POPUP "PlayList"
+    BEGIN
+        MENUITEM "Add Files",                   ID_PLAYLIST_ADDFILE
+        POPUP "Add"
+        BEGIN
+            MENUITEM "From PlayList",               ID_ADD_FROMPLAYLIST
+        END
+        MENUITEM SEPARATOR
+        POPUP "Delete"
+        BEGIN
+            MENUITEM "From List",                   ID_PLAYLIST_DELETEFROMLIST
+            MENUITEM "From Disk",                   ID_PLAYLIST_DELETEFROMDISK
+        END
+        MENUITEM "Clear All",                   ID_PLAYLIST_CLEARALL
+        MENUITEM "Remove Redundancy",           ID_PLAYLIST_REMOVEREDUNDANCY
+        MENUITEM SEPARATOR
+        POPUP "PlayList"
+        BEGIN
+            MENUITEM "Load New",                    ID_PLAYLIST_LOADPLAYLIST
+            MENUITEM "Save As",                     ID_PLAYLIST_SAVEPLAYLIST
+            MENUITEM "Save",                        ID_PLAYLIST_SAVE
+        END
+        MENUITEM "Property",                    ID_PLAYLISTWITHFILESELECTED_PROPERTY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,16
+ PRODUCTVERSION 1,0,0,16
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Comments", "绿色简单的全能播放器"
+            VALUE "CompanyName", "北京理工大学 杨垣"
+            VALUE "FileDescription", "BINPLAYER"
+            VALUE "FileVersion", "1, 0, 0, 16"
+            VALUE "InternalName", "BinPlayer"
+            VALUE "LegalCopyright", "Copyright (C) 2008 - 2009 杨垣"
+            VALUE "OriginalFilename", "BinPlayer.exe"
+            VALUE "ProductName", "BINPLAYER"
+            VALUE "ProductVersion", "1, 0, 0, 16"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 92
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DIALOG_OPENURL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 37
+    END
+
+    IDD_DIALOG_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_DIALOG_CFG_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 278
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_DIALOG_CFG_PLAYLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 278
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_DIALOG_CFG_THEME, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 278
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_DIALOG_CFG_ACTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 278
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_DIALOG_CFG_DEBUG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 278
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_DIALOG_CFG_DECODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 278
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 238
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_ABOUT DIALOGEX 0, 0, 99, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,42,14,50,14
+    ICON            IDI_ICON_MAIN,IDC_STATIC,11,10,20,20
+    LTEXT           "Copyright (C) 2008-2009\r\n\r\nyylang1987\r\nbin64.com",IDC_STATIC,7,48,85,35
+    LTEXT           "BinPlayer Alpha Version",IDC_STATIC_VERSION,7,34,85,8
+END
+
+IDD_DIALOG_OPENURL DIALOGEX 0, 0, 174, 44
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "URL"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,57,23,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,117,23,50,14
+    EDITTEXT        IDC_EDIT_OPENURL_URL,7,7,160,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_CONFIG DIALOGEX 0, 0, 378, 266
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Configure"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE_CONFIG,"SysTreeView32",TVS_SHOWSELALWAYS | TVS_NOTOOLTIPS | TVS_NOSCROLL | TVS_FULLROWSELECT | TVS_NOHSCROLL | WS_BORDER | WS_TABSTOP,2,2,92,240
+    CONTROL         "",IDC_SUBDLG_RECT,"Static",SS_ETCHEDFRAME,96,2,280,240
+    PUSHBUTTON      "Save",IDC_BUTTON_SAVE,233,243,71,21
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY,146,243,74,21
+    PUSHBUTTON      "Exit",IDC_BUTTON_EXIT,307,243,68,21
+END
+
+IDD_DIALOG_CFG_GENERAL DIALOGEX 0, 0, 280, 240
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "ac",IDC_CHECK_KEEPACTIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,2,2,198,10
+END
+
+IDD_DIALOG_CFG_PLAYLIST DIALOGEX 0, 0, 280, 240
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Shuffer",IDC_CHECK_SHUFFER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,13,52,10
+    CONTROL         "Repeat",IDC_CHECK_REPEAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,28,56,10
+    GROUPBOX        "Start State",IDC_STATIC_STARTSTATE,2,2,71,41
+    CONTROL         "Save When Close",IDC_CHECK_SAVE_WHEN_CLOSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,2,140,10
+END
+
+IDD_DIALOG_CFG_THEME DIALOGEX 0, 0, 280, 240
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_LANG,9,11,115,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Language",IDC_STATIC_LANG,2,2,129,26
+    GROUPBOX        "Skin",IDC_STATIC_SKIN,2,32,129,32
+    COMBOBOX        IDC_COMBO_SKIN,9,44,114,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_CFG_ACTIONS DIALOGEX 0, 0, 280, 240
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "HotKeys",IDC_STATIC_HOTKEY,2,2,174,53
+    LTEXT           "Double Click Video Screen",IDC_STATIC_DOUBLECLICK,9,15,82,8
+    COMBOBOX        IDC_COMBO_DOUBLECLICKVEDIO,97,13,68,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Mouse Centre",IDC_STATIC_CENTREMOUSE,9,34,82,8
+    COMBOBOX        IDC_COMBO_CENTREMOUSE,97,31,68,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_CFG_DEBUG DIALOGEX 0, 0, 280, 240
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Save Log File",IDC_CHECK_DEBUGLOGFILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,2,2,110,10
+END
+
+IDD_DIALOG_CFG_DECODE DIALOGEX 0, 0, 280, 240
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Only Use System Decoders",IDC_CHECK_USESYSTEMDECODE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,2,2,179,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_PNG_BUTTON_BACK     PNG                     "resource\\skin\\button_back.png"
+IDB_PNG_BUTTON_NEXT     PNG                     "resource\\skin\\button_next.png"
+IDB_PNG_BUTTON_PAUSE    PNG                     "resource\\skin\\button_pause.png"
+IDB_PNG_BUTTON_PLAY     PNG                     "resource\\skin\\button_play.png"
+IDB_PNG_BUTTON_STOP     PNG                     "resource\\skin\\button_stop.png"
+IDB_PNG_CONTROL         PNG                     "resource\\skin\\controlbar.png"
+IDB_PNG_CONTROL_LEFT    PNG                     "resource\\skin\\controlbar_left.png"
+IDB_PNG_CONTROL_RIGHT   PNG                     "resource\\skin\\controlbar_right.png"
+IDB_PNG_SEEKING         PNG                     "resource\\skin\\trackbar_seek.png"
+IDB_PNG_SEEKING_AV      PNG                     "resource\\skin\\trackbar_seek_av.png"
+IDB_PNG_SEEKING_THUMB   PNG                     "resource\\skin\\trackbar_seek_thumb.png"
+IDB_PNG_VOLUME          PNG                     "resource\\skin\\trackbar_volume.png"
+IDB_PNG_VOLUME_AV       PNG                     "resource\\skin\\trackbar_volume_av.png"
+IDB_PNG_VOLUME_THUMB    PNG                     "resource\\skin\\trackbar_volume_thumb.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING60000         "BinPlayer"
+    IDS_STRING60001         "TIME"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING61030         "OK"
+    IDS_STRING60401         "Cancel"
+    IDS_STRING60402         "Save"
+    IDS_STRING60403         "Apply"
+    IDS_STRING60404         "Exit"
+    IDS_STRING60410         "Open Media File"
+    IDS_STRING60411         "PlayList"
+    IDS_STRING61031         "Save PlayList"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING61000         "Configure Options"
+    IDS_STRING61001         "General"
+    IDS_STRING61002         "Language & Theme"
+    IDS_STRING61003         "PlayList & Files"
+    IDS_STRING61004         "Actions"
+    IDS_STRING61005         "Debug"
+    IDS_STRING61006         "Decoder"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING61020         "Prevent Standby and Screen Saver When Playing"
+    IDS_STRING61021         "Language"
+    IDS_STRING61022         "Skin"
+    IDS_STRING61023         "States at Start"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING61024         "Only Use System Decoders"
+    IDS_STRING61025         "HotKeys"
+    IDS_STRING61026         "Double Click Screen"
+    IDS_STRING61027         "Full Screen"
+    IDS_STRING61028         "Resume/Pause"
+    IDS_STRING61029         "Save Error Logs"
+    IDS_STRING6             "Save Playlist When Closing"
+    IDS_STRING7             "Mouse Center Pressed"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING60405         "Repeat"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING60112         "Shuffer"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
